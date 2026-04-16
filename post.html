@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Novo Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Criar um Novo Usuário</h1>
+        <p>Preencha o formulário abaixo para criar um novo usuário na API.</p>
+        
+    
+        <form id="form-novo-usuario">
+    
+            <input 
+                type="text" 
+                id="usuario-nome" 
+                placeholder="Nome completo"
+                required
+            />
+            
+    
+            <input 
+                type="email" 
+                id="usuario-email" 
+                placeholder="E-mail"
+                required
+            />
+            
+
+            <input 
+                type="tel" 
+                id="usuario-telefone" 
+                placeholder="Telefone"
+                required
+            />
+                    <button type="submit">Criar Usuário</button>
+        </form>
+ 
+        <div id="resultado-usuario"></div>
+    </div>
+
+    <script src="postUsuarios.js"></script>
+</body>
+</html>

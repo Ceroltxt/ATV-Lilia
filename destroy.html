@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletar Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Deletar um Usuário</h1>
+        <p>Digite o ID do usuário que deseja remover.</p>
+        
+       
+        <form id="form-deletar-usuario">
+         
+            <input 
+                type="number" 
+                id="usuario-id" 
+                placeholder="ID do usuário (1-10)"
+                min="1"
+                max="10"
+                required
+            />
+            
+        
+            <button type="submit" style="background-color: #dc3545;">Deletar Usuário</button>
+        </form>
+        
+
+        <div id="resultado-usuario"></div>
+    </div>
+
+    <script src="destroyUsuarios.js"></script>
+</body>
+</html>
